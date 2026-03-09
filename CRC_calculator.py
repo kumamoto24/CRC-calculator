@@ -24,21 +24,3 @@ def crc_generic(data_bits, poly_bits):
     # CRC remainder = last r bits
     remainder = ''.join(data[-r:])
     return remainder
-
-
-data_input = input("Enter the original binary data (e.g., 1101001) or hex (e.g., 0xAB): ")
-poly_input = input("Enter the generator polynomial in binary (e.g., CRC-8: 100000111): ")
-
-# Convert hexadecimal input to binary
-if data_input.startswith("0x") or data_input.startswith("0X"):
-    data_input = bin(int(data_input, 16))[2:]
-
-# Input Validation
-if not all(c in '01' for c in data_input + poly_input):
-    print("Input must contain only binary digits 0 and 1!")
-else:
-    crc_rem = crc_generic(data_input, poly_input)
-    print(f"Original data: {data_input}")
-    print(f"Generator polynomial: {poly_input}")
-    print(f"CRC remainder: {crc_rem}")
-    print(f"Transmitted data: {data_input + crc_rem}")
