@@ -9,7 +9,7 @@ This calculator is also designed to facilitate learning and understanding for th
 It includes a core calculation module (`crc_calculator.py`) and a graphical user interface (`crc_gui.py`) for easier input and visualization.
 
 ## Project Structure
-- `crc_calculator.py` : Core CRC calculation function  
+- `CRC_calculator.py` : Core CRC calculation function  
 - `crc_gui.py` : GUI calling `crc_calculator.py`  
 - `README.md` : Project description  
 - `LICENSE` : License information
