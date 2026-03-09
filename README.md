@@ -5,8 +5,8 @@ CRC, or Cyclic Redundancy Check, is a widely used method for detecting errors in
 It works by treating the data as a binary number, dividing it by a predefined generator polynomial, and producing a remainder called the CRC checksum. This checksum can be used to verify whether the data has been transmitted or stored correctly.  
 
 The purpose of this project is to provide a simple CRC calculator to verify manually calculated CRC results.  
-This calculator is also designed to facilitate learning and understanding for the UWA **CITS3002** unit.  
-It includes a core calculation module (`crc_calculator.py`) and a graphical user interface (`crc_gui.py`) for easier input and visualization.
+This calculator is also designed to facilitate learning and understanding for the **UWA CITS3002** unit.  
+It includes a core calculation module (`CRC_calculator.py`) and a graphical user interface (`crc_gui.py`) for easier input and visualization.
 
 ## Project Structure
 - `CRC_calculator.py` : Core CRC calculation function  
